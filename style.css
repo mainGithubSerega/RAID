@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+body,html{
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main-block{
+    min-height: 100vh;
+    background: url('../img/raid-shadow-legends-tier-list.jpg') no-repeat center / cover;
+}
+.plus-bg{
+    background: url('../img/maxresdefault.jpg') no-repeat center / cover fixed
+}
+.main-content{
+    min-height: 120vh;
+    background-color: #000000;
+    position: relative;
+}
+.main-content::before{
+    content: '';
+    position: absolute;
+    background: url('../img/void.png') no-repeat;
+    top: -80px;
+    right: 0;
+    display: block;
+    width: 210px;
+    height: 210px;
+    animation: socrals 3s ease-in-out infinite alternate;
+}
+.main-content::after{
+    content: '';
+    position: absolute;
+    background: url('../img/ancient.png') no-repeat;
+    top: -80px;
+    left: 0;
+    display: block;
+    width: 210px;
+    height: 210px;
+    animation: socrals 3.5s ease infinite alternate 0.3s;
+}
+.main-content__title{
+    text-transform: uppercase;
+    font-size: 45px;
+    color: silver;
+    margin-top: 30px;
+    text-align: center;
+}
+@keyframes socrals {
+    0%{
+        transform: translateY(0) rotate(7deg);
+    }
+    100%{
+        transform: translateY(30px) rotate(0);
+    }
+}
