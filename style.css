@@ -19,10 +19,10 @@ body,html{
 }
 .main-block{
     min-height: 100vh;
-    background: url('../img/raid-shadow-legends-tier-list.jpg') no-repeat center / cover;
+    background: url('../images/raid-shadow-legends-tier-list.jpg') no-repeat center / cover;
 }
 .plus-bg{
-    background: url('../img/maxresdefault.jpg') no-repeat center / cover fixed
+    background: url('../images/maxresdefault.jpg') no-repeat center / cover fixed
 }
 .main-content{
     min-height: 120vh;
@@ -32,7 +32,7 @@ body,html{
 .main-content::before{
     content: '';
     position: absolute;
-    background: url('../img/void.png') no-repeat;
+    background: url('../images/void.png') no-repeat;
     top: -80px;
     right: 0;
     display: block;
@@ -43,7 +43,7 @@ body,html{
 .main-content::after{
     content: '';
     position: absolute;
-    background: url('../img/ancient.png') no-repeat;
+    background: url('../images/ancient.png') no-repeat;
     top: -80px;
     left: 0;
     display: block;
